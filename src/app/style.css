@@ -1,0 +1,130 @@
+
+
+.container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1100px;
+    padding: 0 15px;
+}
+
+.d-flex {display: flex;}
+.flex-column {flex-direction: column;}
+.justify-space-between {justify-content: space-between}
+.justify-center {justify-content: center}
+.justify-end {justify-content: flex-end}
+.align-center {align-items: center}
+.gap-1 {gap: 4px}
+.gap-2 {gap: 8px}
+.gap-3 {gap: 12px}
+.gap-4 {gap: 16px}
+.gap-5 {gap: 20px}
+.mt-1 {margin-top: 4px;}
+.mt-2 {margin-top: 8px;}
+.mt-3 {margin-top: 12px;}
+.mt-4 {margin-top: 16px;}
+.mt-5 {margin-top: 20px;}
+
+
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+}
+
+thead {
+    background-color: #f8f9fa;
+}
+
+th {
+    padding: 1rem 1.5rem;
+    text-align: left;
+    color: #6c757d;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    letter-spacing: 0.5px;
+    border-bottom: 2px solid #e9ecef;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+th:hover {
+    background-color: #f1f3f5;
+}
+
+td {
+    padding: 10px 15px;
+    color: #495057;
+    border-bottom: 1px solid #e9ecef;
+    transition: background 0.2s ease;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+tbody tr:hover td {
+    background-color: #f8f9fa;
+}
+
+
+
+/* Стили для пагинации */
+.d-flex.justify-end.gap-2 {
+    margin-top: 1.5rem;
+    color: #6c757d;
+}
+
+.d-flex.justify-end.gap-2 > div {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+}
+
+.d-flex.justify-end.gap-2 > div:hover {
+    background: #f8f9fa;
+    color: #339af0;
+}
+
+/* Стили для инпутов */
+.Input {
+    padding: 0.5rem 1rem;
+    border: 1px solid #dee2e6;
+    border-radius: 6px;
+    transition: border-color 0.2s ease;
+}
+
+.Input:focus {
+    outline: none;
+    border-color: #4dabf7;
+    box-shadow: 0 0 0 3px rgba(77, 171, 247, 0.1);
+}
+
+/* Анимация модального окна */
+.Modal {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+
+    th, td {
+        padding: 0.75rem 1rem;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+}
